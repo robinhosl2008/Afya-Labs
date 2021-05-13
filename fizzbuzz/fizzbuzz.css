@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(221, 221, 221);
+}
+
+body button {
+    background-color: white;
+    border-radius: 5px;
+}
+
+body button a {
+    text-decoration: none;
+    color: black;
+}
+
+body input#valor {
+    width: 50px;
+}
+
+body label {
+    font-size: 20px;
+}
+
+body .res {
+    padding-top: 50px;
+}
