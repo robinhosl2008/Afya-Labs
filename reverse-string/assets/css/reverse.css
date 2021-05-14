@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 247, 226);
+    margin: 0px;
+}
+
+.botao {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+#menu-topo {
+    background-color: rgb(184, 207, 184);
+    padding: 10px 20px;
+}
+
+.content {
+    padding: 0px 20px;
+}
+
+#resultado {
+    background-color: rgb(184, 207, 184);
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+#oResultado {
+    margin-top: 20px;
+}
