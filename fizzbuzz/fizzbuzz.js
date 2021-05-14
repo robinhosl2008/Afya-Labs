@@ -1,19 +1,37 @@
 
 
 function init(){
-    var valor = document.getElementById("valor");
-    var resultado = document.getElementById("resultado");
-    var botaoVoltar = document.getElementById("botao-voltar");
-    var botaoValidar = document.getElementById("botao-validar");
+    var valor = document.getElementById("valor"),
+        resultado = document.getElementById("resultado");
 
-    document.getElementById("botao-limpar").onclick = function() {
+    document.getElementById("limpar").onclick = function() {
         valor.value = "";
         resultado.value = "";
     };
+
+    document.getElementById("voltar").onclick = function() {
+        window.location.href = "../index.html";
+    }
+
+    document.getElementById("validar").onclick = function() {
+        let obj = {
+            "val": valor.value, 
+            "elemRes": resultado
+        };
+
+        if (valida()) {
+            validarNumero();
+        }
+    }
 }
 
-function validarValor() {
-    var botaoLimpar = document.getElementById("botao-limpar");
+function valida(params) {
+    
+}
+
+function validarNumero(obj) {
+    
+    if (obj.val )
     
 }
 
