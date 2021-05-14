@@ -1,11 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e2f7e2;
+    background-color: #dddddd;
     margin: 0px;
 }
 
 #menu-topo {
-    background-color: #b8cfb8;
+    background-color: #bebebe;
     padding: 10px 20px;
 }
 #menu-topo button {
@@ -29,7 +29,7 @@ h3 {
 }
 
 #resultado {
-    background-color: #b8cfb8;
+    background-color: #bebebe;
     margin-top: 20px;
     padding: 10px 20px;
 }
