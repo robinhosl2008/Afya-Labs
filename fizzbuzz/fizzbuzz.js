@@ -1,4 +1,12 @@
-
+/**
+ * FizzBuzz
+ * 
+ * Divisível por 3 imprime 'Fizz',
+ * Divisível por 5 imprime 'Buzz',
+ * Divisível por 3 e 5 imprime 'FizzBuzz',
+ * Se não for um número imprime 'Não é um número',
+ * Se não for divisível por 3 ou 5 imprime o valor.
+ */
 
 function init(){
     var valor = document.getElementById("valor"),
@@ -19,19 +27,23 @@ function init(){
             "elemRes": resultado
         };
 
-        if (valida()) {
-            validarNumero();
-        }
+        mostrarResultado(obj);
     }
 }
 
-function valida(params) {
+function mostrarResultado(obj) {
     
-}
-
-function validarNumero(obj) {
-    
-    if (obj.val )
+    if (isNaN(obj.val)) {
+        obj.elemRes.value = "Não é um número.";
+    } else if (obj.val % 3 == 0 && obj.val % 5 == 0) {
+        obj.elemRes.value = "FizzBuzz";
+    } else if (obj.val % 3 == 0) {
+        obj.elemRes.value = "Fizz";
+    } else if (obj.val % 5 == 0) {
+        obj.elemRes.value = "Buzz";
+    } else {
+        obj.elemRes.value = obj.val;
+    }
     
 }
 
